@@ -1,0 +1,19 @@
+{
+  "schema": "szl.hf-docker-space/v1",
+  "source_repository": "szl-holdings/ayllu",
+  "target": "SZLHOLDINGS/ayllu",
+  "sdk": "docker",
+  "app_port": 7860,
+  "bind_repo": "szl-holdings/ayllu-hf-space",
+  "vertical": "maskaq-search + kinship-counsel + legal-matter-command",
+  "smoke_paths": [
+    "/",
+    "/counsel",
+    "/psyche",
+    "/health",
+    "/api/v1/ayllu/roster",
+    "/api/v1/ayllu/retrieve?q=lambda",
+    "/api/v1/ayllu/manifest"
+  ],
+  "wait_running_seconds": 600
+}
