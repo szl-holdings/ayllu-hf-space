@@ -1,14 +1,14 @@
-# PAYLOAD — occupy SZLHOLDINGS/ayllu
+# PAYLOAD — occupy + sovereign
 
-Canonical: https://github.com/szl-holdings/ayllu
-This repo is the bind slot only. Do not fork the council here.
+Canonical Python: https://github.com/szl-holdings/ayllu
+Do not fork the council into this bind repo.
 
 ```bash
 git clone https://github.com/szl-holdings/ayllu.git && cd ayllu
-python -m pip install huggingface_hub==1.19.0
-# copy scripts/ayllu_occupy.py from szl-holdings/ayllu-hf-space or run:
-python ../ayllu-hf-space/scripts/ayllu_occupy.py
+python scripts/ayllu_occupy.py      # HF_TOKEN — Space already MEASURED Running
+python scripts/ayllu_sovereign.py   # no key; local runtimes + Hub catalog
 ```
 
-Requires `HF_TOKEN`. Optional `XAI_API_KEY` for LIVE grok-4.5.
-Smoke must be 200 before anyone says LIVE. Λ = Conjecture 1.
+Speech: local OpenAI-compatible empty-key runtime → optional XAI → SOFTWARE.
+LIVE only if a local runtime answers or a real key answers. Never fabricate.
+Λ = Conjecture 1.
