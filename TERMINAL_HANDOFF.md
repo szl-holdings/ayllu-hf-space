@@ -10,7 +10,7 @@ The GitHub Action `.github/workflows/hf-space.yml` on that repo already uploads 
 1. Confirm Hub org `SZLHOLDINGS` and Space name `ayllu`.
 2. If the Space does not exist, create it as Docker SDK, port 7860, Apache-2.0. If Hub rate-limits Space creation (20/day), wait — do not create a second product name.
 3. Set Space secret `XAI_API_KEY` so Counsel / seats can answer LIVE with the model pinned in code in `szl-holdings/ayllu` (`DEFAULT_GROK_MODEL`, Grok 4.7 / `grok-4.7`). Absent the secret, backend stays SOFTWARE.
-   Do not set a model Space variable. `AYLLU_MODEL` is not read on the xAI path. `SZL_GROK_MODEL` (server-side only) is the owner's rollback lever: it accepts only the reviewed allowlist (`grok-4.7`, rollback `grok-4.5`); any other value fails closed as UNAVAILABLE with no xAI call. If it is set for a rollback, record who/when/why and delete it once the rollback is resolved.
+   Do not set a model Space variable. `AYLLU_MODEL` is not read on the xAI path. `SZL_GROK_MODEL` (server-side only) is the owner's rollback lever: it accepts only the reviewed allowlist (`grok-4.7`, rollback `grok-4.5`); any other value fails closed with no xAI request (Counsel returns UNAVAILABLE, the seats stay SOFTWARE, no silent fallback). If it is set for a rollback, record who/when/why and delete it once the rollback is resolved.
 4. From a checkout of `szl-holdings/ayllu`:
 
 ```bash
