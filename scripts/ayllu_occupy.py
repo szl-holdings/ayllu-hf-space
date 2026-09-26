@@ -87,7 +87,10 @@ def main() -> int:
         print("secret XAI_API_KEY set")
     else:
         print("XAI_API_KEY UNAVAILABLE — backend stays SOFTWARE")
-    api.add_space_variable(HF, "AYLLU_MODEL", "grok-4.5")
+    # No model Space variable is written. The xAI model is pinned in code in
+    # szl-holdings/ayllu (DEFAULT_GROK_MODEL) and AYLLU_MODEL is not read on the
+    # xAI path. A written variable would become a stale override the next time
+    # the pin changes. SZL_GROK_MODEL is an owner-only rollback lever.
     print("page", PAGE)
     print("runtime", HOST)
     deadline = time.time() + 600
