@@ -42,7 +42,9 @@ This repository is the **org-side Space slot** for Ayllu Counsel.
 | Product | [a-11-oy.com](https://a-11-oy.com) |
 | Proof | [a11oy.net](https://a11oy.net) |
 
-**Honesty:** this repo is a bind target, not a second product. Do not fork the council here. Sync from `szl-holdings/ayllu` and publish with `HF_TOKEN`.
+**Honesty:** this repo is a bind target, not a second product. Do not fork the council here.
+
+**Sole Hub writer:** the Space is published only by the CI workflow [`szl-holdings/ayllu` `.github/workflows/hf-space.yml`](https://github.com/szl-holdings/ayllu/blob/main/.github/workflows/hf-space.yml), on push to that repo's `main` or by dispatch. It fails closed without its credential and records a receipt only when the Hub commit, the RUNNING runtime SHA and the pushed bytes all match. `scripts/ayllu_occupy.py` here is retired: it refuses to run and makes no Hub or network call. Do not publish from a local checkout.
 
 The Space is a **vertical search + kinship counsel**:
 - Maskaq retrieve over the public 575-chunk Second Brain projection (handles only)
