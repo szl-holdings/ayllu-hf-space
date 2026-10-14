@@ -6,7 +6,7 @@ Operator kit. Not a flagship. Not KEEP-7.
 
 | Layer | Where | Why |
 |---|---|---|
-| Source (this thread) | `szl-holdings/ayllu-hf-space` | Bind kit: TERMINAL_HANDOFF, OCCUPANCY, occupy script |
+| Source (this thread) | `szl-holdings/ayllu-hf-space` | Bind kit: TERMINAL_HANDOFF, OCCUPANCY (legacy occupy script retired; CI `hf-space.yml` in szl-holdings/ayllu is the sole writer) |
 | Canonical council | `szl-holdings/ayllu` | Do not fork 11 seats into the bind repo |
 | Hub runtime | existing `SZLHOLDINGS/ayllu` | `upload_folder` only. No `create_repo`. FOLD, not KEEP |
 | Public walk | https://a11oy.net/ayllu/ | RECORD fold dest |

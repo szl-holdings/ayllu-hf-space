@@ -3,9 +3,11 @@
 Canonical Python: https://github.com/szl-holdings/ayllu
 Do not fork the council into this bind repo.
 
+Publishing SZLHOLDINGS/ayllu is CI-only: https://github.com/szl-holdings/ayllu/blob/main/.github/workflows/hf-space.yml
+(push to szl-holdings/ayllu main, or dispatch it). `scripts/ayllu_occupy.py` is retired and refuses to run.
+
 ```bash
 git clone https://github.com/szl-holdings/ayllu.git && cd ayllu
-python scripts/ayllu_occupy.py      # HF_TOKEN — Space already MEASURED Running
 python scripts/ayllu_sovereign.py   # no key; local runtimes + Hub catalog
 ```
 
