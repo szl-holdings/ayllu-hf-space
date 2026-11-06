@@ -56,3 +56,5 @@ The Space is a **vertical search + kinship counsel**:
 ## Terminal handoff (Grok in terminal)
 
 See [TERMINAL_HANDOFF.md](TERMINAL_HANDOFF.md).
+
+Estate on Hugging Face: models, datasets and Spaces are published under the [SZLHOLDINGS](https://huggingface.co/SZLHOLDINGS) org.
